@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Validar Nombre</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 40px;
+    }
+  </style>
+</head>
+<body>
+  <h2>🧩 Validación de Nombre 🧩</h2>
+  <input type="text" id="nombre" placeholder="Ingresa tu nombre">
+  <button onclick="validar()">Enviar</button>
+  <p id="mensaje"></p>
+
+  <script>
+    function validar() {
+      const nombre = document.getElementById("nombre").value;
+      const mensaje = document.getElementById("mensaje");
+      if (nombre.length < 3) {
+        mensaje.textContent = "El nombre debe tener al menos 3 caracteres.";
+        mensaje.style.color = "red";
+      } else {
+        mensaje.textContent = "Nombre válido ✅";
+        mensaje.style.color = "green";
+      }
+    }
+  </script>
+</body>
+</html>
+
+<div style="text-align: center; margin-top: 50px;">
+  <button onclick="location.href='index.html'" style="
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #2196f3;
+    color: white;
+    cursor: pointer;
+  ">Inicio</button>
+</div>

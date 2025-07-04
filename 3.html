@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sumar Números</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 40px;
+    }
+  </style>
+</head>
+<body>
+  <h2>➕ Sumar Dos Números ➕</h2>
+  <input type="number" id="n1" placeholder="Número 1">
+  <input type="number" id="n2" placeholder="Número 2">
+  <button onclick="sumar()">Sumar</button>
+  <p id="resultado"></p>
+
+  <script>
+    function sumar() {
+      const n1 = parseFloat(document.getElementById("n1").value);
+      const n2 = parseFloat(document.getElementById("n2").value);
+      const suma = n1 + n2;
+      document.getElementById("resultado").textContent = `Resultado: ${suma}`;
+    }
+  </script>
+</body>
+</html>
+
+<div style="text-align: center; margin-top: 50px;">
+  <button onclick="location.href='index.html'" style="
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #2196f3;
+    color: white;
+    cursor: pointer;
+  ">Inicio</button>
+</div>

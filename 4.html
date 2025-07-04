@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contador</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 40px;
+    }
+
+    #valor {
+      font-size: 30px;
+      margin: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h2>🔢 Contador 🔢</h2>
+  <div id="valor">0</div>
+  <button onclick="cambiar(1)">+</button>
+  <button onclick="cambiar(-1)">-</button>
+  <button onclick="reiniciar()">Reiniciar</button>
+
+  <script>
+    let contador = 0;
+
+    function cambiar(n) {
+      contador += n;
+      document.getElementById("valor").textContent = contador;
+    }
+
+    function reiniciar() {
+      contador = 0;
+      document.getElementById("valor").textContent = contador;
+    }
+  </script>
+</body>
+</html>
+
+<div style="text-align: center; margin-top: 50px;">
+  <button onclick="location.href='index.html'" style="
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #2196f3;
+    color: white;
+    cursor: pointer;
+  ">Inicio</button>
+</div>
